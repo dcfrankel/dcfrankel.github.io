@@ -31,8 +31,20 @@
     <!-- General information about myself -->
     <section class="about" id="about" data-aos="fade-in" data-aos-delay="300">
         <div class="container">
-            <div class="profile-img">
-                <img src="assets/profile.png" alt="Profile Image">
+            <div class="profile-info">
+                <div class="profile-img">
+                    <img src="assets/profile.png" alt="Profile Image">
+                </div>
+                <div class="social-media">
+                    <div class="icon-link">
+                        <i class="fab fa-github-square"></i>
+                        <a href="https://github.com/dcfrankel">github.com/dcfrankel</a>
+                    </div>
+                    <div class="icon-link">
+                        <i class="fab fa-linkedin"></i>
+                        <a href="https://www.linkedin.com/in/frankelcdavid">linkedin.com/in/frankelcdavid</a>
+                    </div>
+                </div>
             </div>
             <div class="about-details">
                 <div class="about-heading">
@@ -49,29 +61,30 @@
     </section>
     <!-- Short description of of my skills -->
     <section class="my-skills" id="my-skills">
-        <div class="skill">
-            <h1>Data Engineering</h1>
-            <div class="skill-container">
+        <div class="container">
+            <div class="skill">
                 <i class="material-icons md-60">storage</i>
-                <p>
-                    I've build robust ETL pipelines with Apache Beam.
-                    Frequently use of Python / Pandas for Data Analysis, and Apache Spark
-                    for times when it's not enough.
-                    I've experience with Google Bigtable, Apache Hadoop, Google BigQuery,
-                    and just plain old reliable PosgreSQL.
-                </p>
+                <div class="skill-container">
+                    <h1>Data Engineering</h1>
+                    <p>
+                        I've build robust ETL pipelines with Apache Beam.
+                        Frequently use of Python / Pandas for Data Analysis, and Apache Spark
+                        for times when it's not enough.
+                        I've experience with Google Bigtable, Apache Hadoop, Google BigQuery,
+                        and just plain old reliable PosgreSQL.
+                    </p>
+                </div>
             </div>
-        </div>
-        </div>
-        <div class="skill" data-aos="fade-in" data-aos-delay="600">
-            <h1>Software Development</h1>
-            <div class="skill-container">
+            <div class="skill" data-aos="fade-in" data-aos-delay="600">
                 <i class="material-icons md-60">laptop_mac</i>
-                <p>
-                    Docker, Google App Engine, Google Kubernetes, I've used them all.
-                    While my day to day languages are Java and Python,
-                    I enjoy learning new languages and programming paradigms.
-                </p>
+                <div class="skill-container">
+                    <h1>Software Development</h1>
+                    <p>
+                        Docker, Google App Engine, Google Kubernetes, I've used them all.
+                        While my day to day languages are Java and Python,
+                        I enjoy learning new languages and programming paradigms.
+                    </p>
+                </div>
             </div>
         </div>
     </section>
@@ -181,18 +194,6 @@
     <!-- Basic copywright statement and up arrow for scrolling to the top of the page -->
     <footer class="copyright">
         <!-- Links to my github and linkedin -->
-        <div class="social-media">
-            <div class="product-logo">
-                <a href="https://github.com/dcfrankel">
-                    <i class="fab fa-github-square"></i>
-                </a>
-            </div>
-            <div class="product-logo">
-                <a href="https://www.linkedin.com/in/frankelcdavid">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-            </div>
-        </div>
         <p>&copy; 2020 - David Frankel - All rights reserved.</p>
     </footer>
     <input type="image" src="assets/arrow-up-circle.svg" class="up" id="up">

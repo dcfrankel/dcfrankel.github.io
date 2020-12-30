@@ -36,7 +36,8 @@ body {
 }
 
 section {
-    padding: 6rem 0;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
 }
 
 a {
@@ -46,10 +47,6 @@ a {
 p {
     font-size: 1.8rem;
     font-weight: 300;
-}
-
-img {
-    width: 100%;
 }
 
 header {
@@ -119,8 +116,7 @@ The main styling portion targeting specific classes
 }
 
 .container {
-    width: 99%;
-    max-width: 120rem;
+    width: 80%;
     height: 100%;
     margin: 0 auto;
     position: relative;
@@ -137,10 +133,10 @@ The main styling portion targeting specific classes
     font-weight: 300;
     position: relative;
     margin-bottom: 2rem;
-    display:inline-block
+    display: inline-block
 }
 
-.underline-header:after{
+.underline-header:after {
     content: "";
     float: left;
     width: 100%;
@@ -184,8 +180,9 @@ The main styling portion targeting specific classes
 
 .about .container {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
+    padding-left: 10rem;
+    padding-right: 10rem;
 }
 
 .about-heading {
@@ -208,53 +205,76 @@ The main styling portion targeting specific classes
     color: rgb(var(--primary-color))
 }
 
-.profile-img {
-    flex: 1;
+.profile-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50rem;
+    height: 25rem;
 }
 
 .profile-img img {
-    max-width: 50%;
-    max-height: 50%;
+    height: auto;
+    width: 50%;
+    align-self: center;
+}
+
+.social-media {
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.icon-link {
+    background: none;
+    padding: .5rem;
+    color: gray;
+    font-size: 2rem;
+}
+
+.icon-link a {
+    color: gray;
 }
 
 .about-details {
     flex: 1;
 }
 
-.my-skills {
-    margin-top: 10rem;
-    margin-bottom: 15rem;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-    grid-gap: 2.5rem;
+.my-skills .container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 90%;
 }
 
 .skill {
+    flex:1 1 100px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 2rem;
 }
 
-.skill h1 {
+.skill i {
+    color: rgb(var(--secondary-color));
+    margin: 4rem;
+    transform: rotate(45deg);
+}
+
+.skill-container h1 {
+    display: flex;
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 2px;
     font-size: 2.5rem;
     margin-bottom: 2.5rem;
+    justify-content: center;
 }
 
 .skill-container {
-    width: 50rem;
-    height: 12rem;
     display: flex;
-}
-
-.skill-container i {
-    color: rgb(var(--secondary-color));
-    margin: auto;
-    margin: 4rem;
+    flex-direction: column;
 }
 
 .material-icons.md-60 {
@@ -262,7 +282,8 @@ The main styling portion targeting specific classes
 }
 
 .skill-container p {
-    width: 50rem;
+    width: 100%;
+    min-height: 100%
 }
 
 .portfolio-item {
@@ -370,10 +391,11 @@ The main styling portion targeting specific classes
 
 .contact {
     background-color: rgb(var(--background-color));
+    padding-bottom: 1rem;
 }
 
 .submit {
-    width: 8rem; 
+    width: 8rem;
     height: 4rem;
     margin-left: 4rem;
     font-size: 2rem;
@@ -444,25 +466,6 @@ The main styling portion targeting specific classes
     animation: pulse 2s infinite;
 }
 
-.social-media {
-    display: flex;
-    text-align: ceenter;
-}
-
-.social-media i {
-    font-size: 5rem;
-    transition: color 650ms;
-}
-
-.product-logo {
-    background: none;
-    flex: 33.33%;
-    padding: 5px;
-}
-
-.product-logo i {
-    color: gray;
-}
 
 .icon-image {
     transition: opacity 650ms;
@@ -481,7 +484,7 @@ The main styling portion targeting specific classes
     width: 100%;
     text-align: center;
     background-color: rgb(var(--background-color));
-    padding: 2rem 0;
+    padding: 1rem 0;
     position: relative;
 }
 
